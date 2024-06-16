@@ -19,7 +19,7 @@ function GenerateAudio() {
 
     const generateSpeech = async () => {
         try {
-            const response = await axios.post('http://54.254.162.138/generate-speech', {
+            const response = await axios.post('https://api.render.com/deploy/srv-cpnhevuehbks7387vjd0?key=MsP9jTNPgaQ/generate-speech', {
                 text,
                 speaker_id: parseInt(speakerId),
             });
