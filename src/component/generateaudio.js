@@ -19,7 +19,7 @@ function GenerateAudio() {
 
     const generateSpeech = async () => {
         try {
-            const response = await axios.post('https://vocalize-server.netlify.app/generate-speech', {
+            const response = await axios.post('https://f7ab-2409-40d0-114d-1fb7-4dcc-9e9d-b053-724b.ngrok-free.app/generate-speech', {
                 text,
                 speaker_id: parseInt(speakerId),
             });
