@@ -1,11 +1,27 @@
+
+.span-text{
+    background-color: transparent;
+    font-size: 0.8vw;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #F0F0F0;
+    color: white;
+    box-sizing: border-box;
+}
 
-.section-card{
+.section-card {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
-.card{
+
+.card {
     display: block;
     text-align: center;
     height: 80vh;
@@ -14,27 +30,24 @@
     margin-top: 10vh;
     border-radius: 22.4px;
     box-shadow: 10px 10px 10px 10px grey;
+    padding: 20px;
+    overflow: hidden;  /* Ensure child elements are contained */
 }
-.title{
+
+.title {
     background-color: transparent;
     font-size: 2vw;
 }
 
-*{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    background-color: #F0F0F0;
-    color: white;
-}
-.generate-btn{
+.generate-btn {
     background-color: transparent;
     border: 2px solid white;
     width: 20vw;
     height: 5vh;
-    border-radius:22.4px ;
+    border-radius: 22.4px;
 }
-.text-input{
+
+.text-input {
     width: 25vw;
     text-align: center;
     border-radius: 22.4px;
@@ -42,23 +55,160 @@
     color: #30cfd0;
     font-size: 1vw;
 }
-.speaker-input{
+
+.speaker-input {
     text-align: center;
     width: 25vw;
     height: 4vh;
-    border-radius:22.4px ;
+    border-radius: 22.4px;
     border: none;
     margin: 2vw;
     font-size: 1vw;
     color: #30cfd0;
 }
 
-.generate-btn:hover{
-    
-    border:none ;
+.generate-btn:hover {
+    border: none;
 }
 
-.audio-out{
+.audio-out {
     background-color: transparent;
-    margin: 10vh;
+    margin-top: 10vh;
+    width: 100%;
+    text-align: center;
+    max-height: 20vh;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 2.5vw;
+    }
+    .generate-btn {
+        width: 25vw;
+        height: 6vh;
+    }
+    .text-input {
+        width: 30vw;
+        height: 18vh;
+        font-size: 1.2vw;
+    }
+    .speaker-input {
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.2vw;
+    }
+    .audio-out {
+        margin-top: 8vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        height: 75vh;
+        width: 85vw;
+    }
+    .title {
+        font-size: 3vw;
+    }
+    .generate-btn {
+        width: 30vw;
+        height: 7vh;
+    }
+    .text-input {
+        width: 35vw;
+        height: 20vh;
+        font-size: 1.5vw;
+    }
+    .speaker-input {
+        width: 35vw;
+        height: 6vh;
+        font-size: 1.5vw;
+    }
+    .audio-out {
+        margin-top: 7vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 70vh;
+        width: 80vw;
+    }
+    .title {
+        font-size: 4vw;
+    }
+    .generate-btn {
+        width: 35vw;
+        height: 8vh;
+    }
+    .text-input {
+        width: 40vw;
+        height: 22vh;
+        font-size: 1.8vw;
+    }
+    .speaker-input {
+        width: 40vw;
+        height: 7vh;
+        font-size: 1.8vw;
+    }
+    .audio-out {
+        margin-top: 6vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        height: 60vh;
+        width: 95vw;
+    }
+    .title {
+        font-size: 5vw;
+    }
+    .generate-btn {
+        width: 40vw;
+        height: 10vh;
+    }
+    .text-input {
+        width: 50vw;
+        height: 25vh;
+        font-size: 2vw;
+    }
+    .speaker-input {
+        width: 50vw;
+        height: 8vh;
+        font-size: 2vw;
+    }
+    .audio-out {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        height: auto;
+        width: 100vw;
+    }
+    .title {
+        font-size: 6vw;
+    }
+    .generate-btn {
+        width: 50vw;
+        height: 12vh;
+    }
+    .text-input {
+        width: 60vw;
+        height: 30vh;
+        font-size: 2.5vw;
+    }
+    .speaker-input {
+        width: 60vw;
+        height: 10vh;
+        font-size: 2.5vw;
+    }
+    .audio-out {
+        margin-top: 4vh;
+        max-height: 15vh;
+    }
+}
+
