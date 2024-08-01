@@ -19,7 +19,7 @@ function GenerateAudio() {
 
     const generateSpeech = async () => {
         try {
-            const response = await axios.post('https://87c9-2409-40d0-114d-1fb7-499a-7aa0-2ce3-cf21.ngrok-free.app/generate-speech', {
+            const response = await axios.post('https://crayfish-ready-starfish.ngrok-free.app/generate-speech', {
                 text,
                 speaker_id: parseInt(speakerId),
             });
